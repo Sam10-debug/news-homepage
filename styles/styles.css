@@ -8,6 +8,7 @@
 .mobile-menu{
 	display: none;
 }
+
 body{
 	padding: 0 1rem;
 	min-height: 100vh;
@@ -135,6 +136,19 @@ button{
 #hamburger{
 	display: none;
 }
+
+.reveal{
+	position: relative;
+	transform: translateY(20px);
+	opacity: 0;
+	transition: 2s all ease;
+  }
+  
+  .reveal.active{
+	transform: translateY(0);
+	opacity: 1;
+  }
+
 
 @media screen and (max-width:768px) {
 	.hero-section{
